@@ -1,4 +1,3 @@
-
 header {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
@@ -13,44 +12,36 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main h2 {
-    text-align: center;
-    color: #324775;
-    padding: .50em;
+#aside1 {
+    float: right;
+    width: 50%;
 }
 
-#images {
-    border: thick dotted rgb(255, 255, 255);
-    background-image: linear-gradient(to bottom, rgb(131, 183, 241) 0%, #2431ac 100%);
+div div {
+    margin-top: 1em;
+    border-bottom: thin solid gray;
+    border-top: thin solid gray;
 }
 
-ul > li {
-    color: #2F4F4F;
-    padding: 3px;
-    padding-inline: 3px;
+div p {
+    font-size: 17px;
 }
 
-a:link {color: rgb(15, 138, 66);}
-a:visited {color: #b3289b;}
+br {
+    clear: both;
+}
 
 /*Images*/
-#first_picture {
-    height: 25%;
-    width: 25%;
+#Sflags_image {
+    width: 35%;
 }
 
-#second_picture {
-    height: 40%;
+#Nflags_image {
     width: 40%;
 }
 
-#third_picture {
-    height: 30%;
-    width: 30%;
-}
-
-/*Homepage Specific*/
-main#homepage img {
+/*Flag Images Specific*/
+main#flagspage img {
     min-width: 250px;
 }
 
