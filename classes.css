@@ -12,8 +12,128 @@ h1 {
     color: #324775;
 }
 
-p {
-    text-align: center;
+h3 {
+    text-align: left;
+    padding: 10px
+}
+
+/*Grid*/
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr); /*420s, FJs, lasers (all laser classes) 5 rows*/
+    grid-gap: 15px;
+    grid-template-areas:
+    "one one"
+    "two two"
+    "thr thr"
+    "for for"
+    "fiv fiv";
+}
+
+/*Class 420*/
+#one {
+    background-color: rgb(170, 22, 22); /*C420*/
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+#one .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#one img {
+    max-width: 60%;
+    height: auto;
+}
+
+/*Class Flying Junior*/
+#two {
+    background-color: rgb(192, 130, 37); /*CFJ*/
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#two .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#two img {
+    max-width: 40%;
+    height: auto;
+}
+
+/*Laser Full Rig*/
+#three {
+    background-color: rgb(49, 88, 161); /*ILCA 7*/
+    grid-area: thr;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#three .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#three img {
+    max-width: 50%; /*change*/
+    height: auto;
+}
+
+/*Laser Radial*/
+#four {
+    background-color: rgb(75, 117, 172); /*ILCA 6*/
+    grid-area: for;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#four .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#four img {
+    max-width: 50%;
+    height: auto;
+}
+
+/*Laser 4.7*/
+#five {
+    background-color: rgb(97, 180, 206); /*ILCA 4*/
+    grid-area: fiv;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#five .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#five img {
+    max-width: 60%;
+    height: auto;
 }
 
 /*Navigation Menu*/
@@ -52,5 +172,25 @@ p {
 
     #nav_menu ul li {
     display: table-row;
+    }
+
+    /*The text goes above the images*/
+    #one .content,
+    #two .content,
+    #three .content,
+    #four .content,
+    #five .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #one img,
+    #two img,
+    #three img,
+    #four img,
+    #five img {
+        max-width: 100%;
+        height: auto;
     }
 }
