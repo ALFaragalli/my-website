@@ -34,6 +34,10 @@ main {
     "fiv fiv";
 }
 
+footer {
+    align: center;
+}
+
 /*Class 420*/
 #one {
     background-color: rgb(170, 22, 22); /*C420*/
