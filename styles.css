@@ -19,6 +19,10 @@ main h2 {
     padding: .50em;
 }
 
+footer {
+    align: center;
+}
+
 #images {
     border: thick dotted rgb(255, 255, 255);
     background-image: linear-gradient(to bottom, rgb(131, 183, 241) 0%, #2431ac 100%);
