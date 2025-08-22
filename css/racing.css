@@ -1,0 +1,161 @@
+header {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #324775;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(4, 70, 59);
+}
+
+body {
+    background-color: #b6d8e2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rtt {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/*Navigation Menu*/
+#nav_menu {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 1.5em;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: blue;
+}
+
+#nav_menu ul li a.current {
+    text-decoration: none;
+    color: rgb(17, 105, 98);
+}
+
+#nav_menu ul li a:hover {
+    color: rgb(151, 28, 28);
+}
+
+/*Fleet Racing Scores Table*/
+#fleet_table {
+    border: thin solid black; /*add padding when done with table*/
+    width: 90%;
+    border-collapse: collapse;
+    background-color: rgb(241, 235, 235);
+}
+
+#fleet_table .headers {
+    text-align: left;
+}
+
+#fleet_table .total {
+    text-align: center;
+}
+
+.diva {
+    color: red;
+    border-top: thin solid black;
+}
+
+.diva .place {
+    color: black;
+}
+
+.divb {
+    color: blue;
+}
+
+/*Fleet Nav Bar*/
+#nav_bar1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav_bar1 ul li {
+    display: inline;
+}
+
+#nav_bar1 ul li a {
+    color: rgb(68, 148, 137);
+}
+#nav_bar1 ul li a:hover {
+    color: rgb(105, 8, 76);
+}
+
+/*Team Racing Scores Table*/
+#team_table {
+    border: thin solid black; 
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+    width: 90%;
+    background-color: rgb(241, 235, 235);
+}
+
+#team_table .headers {
+    text-align: left;
+}
+
+#team_table .place {
+    text-align: left;
+}
+
+#team_table .school {
+    text-decoration: underline;
+    color: rgb(37, 86, 192);
+    text-align: left;
+}
+
+#team_table tr td p {
+    color:rgb(37, 86, 192);
+    margin: 0px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#team_table .rec {
+    text-align: left;
+}
+#team_table .team {
+    text-align: left;
+}
+
+@media only screen and (max-width: 530px) {
+    #nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #nav_menu ul li {
+        float: none;
+        width: 100%;
+        display: table-row;
+    }
+
+    #fleet_table {
+        width: 100%;
+    }
+    #team_table {
+        width: 100%;
+    }
+}

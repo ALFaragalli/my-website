@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fleet Racing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="/index.html">Homepage</a></li>
+      <li><a href="/html/flags.html">Race Flags</a></li>
+      <li><a href="/html/racing.html" class="current">Racing</a></li>
+      <li><a href="/html/classes.html" class="lastitem">Fleet Classes</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Racing</h1>
+  </header>
+  <link rel="stylesheet" href="/css/racing.css">
+  <main>
+    <h2>Fleet Racing</h2>
+    <h3>Format and Rules</h3>
+    <p>In fleet racing, all boats race against each other. Commonly in fleet racing there are three types of fleets, bronze/gallium, silver, and gold. 
+      The bronze fleet is made up of skipper and crews who are new to sailing, having them race against sailors who have been competitively racing for a lot longer 
+      wouldn't be fair. The silver fleet is made up of "average" sailors, people who are too good to be in the galluim/bronze fleet and might have picked up sailing faster or 
+      has been doing it for a while, but aren't quite skilled enough for sailing in the gold fleet, or don't reach the team requirements. The gold fleet is made up of sailors 
+      who have at least four people who go to the same team as they do. The gold fleet is made for sailors who are exceptionally skilled at sailing, competing in gold fleet, 
+      you have the chance to race in nationals and other states.</p>
+    <p>Fleet racing uses a low-point system, for what place you get in a race is how many points you have (ex. 1st = 1 point, 3rd = 3 points, 10th = 10 points, and so on). 
+      Your score from each race is added up into your total points for an overall score at the end of the regatta. For high school and college sailing, there are commonly two 
+      divisions for fleet racing: A fleet, and B flet. The team and sailors decide who gets to sail in which division, as it's not usually based off skill. Each division do not 
+      race at the same time, sailors will switch in and out of boats, in fleet racing there is a usually another team you follow for which boat you get into. Sailors switch 
+      around in boats to keep the regatta equal as there may be newer or older boats on the water and one boat could be slower or heavier than another. </p>
+    <p>Right-of-way in sailing is very important as this can cause you places in the race or can bring you up places. What you want most in fleet racing is clean air, 
+      having someone too close upwind from you can cause them to give you 'dirty air' that can slow you down. There are tacks (which way you are facing in relation to the wind) 
+      that have a right-of-way to another. Starboard tack is where the wind is coming from the starbord (right side of the boat) side of your boat, if you are heading towards a 
+      boat that is facing you and you are on a starboard tack, yell it out, the other boat will either 'duck' you (swerve down below you) or tack (turn their boat through the 
+      wind) to be on the same tack as you to avoid a collision. If you have to be the one to avoid contant in a boat while you are in the right-of-way position then you may call 
+      a "protest" on the other boat. When you get protested you have to do either a 360 turn (one tack and one gybe in the same direction), a 720 (two tacks and two gybes in the 
+      same direction) as a penalty for not following the right-of-way rules. If you or another boat does not do their penalty turns when they get protested, it may get sent to 
+      on-shore for a protest hearing with the regatta officials to determine who was in the wrong and if the protest should be thrown out or if the protested boat will get a 
+      pentaly on their score for that race. If you lose a protest, your score for that race will be last place, plus one, so if there are 26 boats on the water and you lose a 
+      protest, your score for that race will be a 27. </p>
+    <h3>Courses</h3>
+    <p>The courses for fleet racing are commonly windward-leeward (sail upwind, round a mark, sometimes an off-set mark, sailing downwind to a leeward mark, 
+      commonly a gate where you can choose which mark you want to round, then sail back up wind to the finish.). Some courses will have three variations of how to round 
+      the marks. Course 1 is commonly start, upwind, downwind, upwind finish, rounding each mark once. Course 2 is commonly start, upwind, downwind, upwind, downwind, finish, 
+      rounding each mark twice. Not all on-the-water sailing comitee (the people on a boat at the start/finish lines) have a course 3. Course 3 (if there is one) is commonly, 
+      start, upwind, downwind, upwind, downwind finish, going around the course one and a half times.</p>
+    <h3>Scoring</h3>
+    <table id="fleet_table"><!--Fleet Racing FULL Scores Table-->
+      <tr class="headers">
+        <th>#</th>
+        <th>Team</th>
+        <th>Div.</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>TOT</th>
+      </tr>
+      <tr class="diva"><!--Bainbridge A-->
+        <td class="place">1</td>
+        <td class="school">Bainbridge</td>
+        <td><b>A</b></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="total">19</td>
+      </tr>
+      <tr class="divb"><!--Bainbridge B-->
+        <td class="place"></td>
+        <td>Spartans 1</td>
+        <td><b>B</b></td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td class="total">34</td>
+      </tr>
+      <tr class="diva"><!--Columbia A-->
+        <td class="place">2</td>
+        <td class="school">Columbia - WA</td>
+        <td><b>A</b></td>
+        <td>3</td>
+        <td>2</td>
+        <td>12</td>
+        <td>3</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td class="total">32</td>
+      </tr>
+      <!--Add Flags and middle section-->
+      <tr class="divb"><!--Columbia B-->
+        <td class="place"></td>
+        <td>Bruins</td>
+        <td><b>B</b></td>
+        <td>1</td>
+        <td>8</td>
+        <td>9</td>
+        <td>1</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td class="total">32</td>
+      </tr>
+      <tr class="diva"><!--Olympia A-->
+        <td class="place">3</td>
+        <td class="school">Olympia</td>
+        <td><b>A</b></td>
+        <td>1</td>
+        <td>7</td>
+        <td>1</td>
+        <td>7</td>
+        <td>11</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>3</td>
+        <td>4</td>
+        <td class="total">44</td>
+      </tr>
+      <tr class="divb"><!--Olympia B-->
+        <td class="place"></td>
+        <td>Bears 1</td>
+        <td><b>B</b></td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>10</td>
+        <td>1</td>
+        <td>2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td class="total">44</td>
+      </tr>
+      <tr class="diva"><!--Roosevelt A-->
+        <td class="place">4</td>
+        <td class="school">Roosevelt</td>
+        <td><b>A</b></td>
+        <td>4</td>
+        <td>3</td>
+        <td>14</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+        <td>7</td>
+        <td>9</td>
+        <td>1</td>
+        <td>5</td>
+        <td class="total">56</td>
+      </tr>
+      <tr class="divb"><!--Roosevelt B-->
+        <td class="place"></td>
+        <td>Rough Riders</td>
+        <td><b>B</b></td>
+        <td>5</td>
+        <td>4</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>1</td>
+        <td>3</td>
+        <td class="total">34</td>
+      </tr>
+      <tr class="diva"><!--Lincoln OR A-->
+        <td class="place">5</td>
+        <td class="school">Lincoln OR</td>
+        <td><b>A</b></td>
+        <td>5</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>7</td>
+        <td>3</td>
+        <td>14</td>
+        <td>5</td>
+        <td>RAF</td>
+        <td>1</td>
+        <td class="total">73</td>
+      </tr>
+      <tr class="divb"><!--Lincoln OR B-->
+        <td class="place"></td>
+        <td>Cardinals 1</td>
+        <td><b>B</b></td>
+        <td>3</td>
+        <td>1</td>
+        <td>11</td>
+        <td>9</td>
+        <td>8</td>
+        <td>8</td>
+        <td>3</td>
+        <td>1</td>
+        <td>9</td>
+        <td>6</td>
+        <td class="total">59</td>
+      </tr>
+      <tr class="diva"><!--Ballard 2 A-->
+        <td class="place">6</td>
+        <td class="school">Ballard</td>
+        <td><b>A</b></td>
+        <td>7</td>
+        <td>6</td>
+        <td>13</td>
+        <td>4</td>
+        <td>3</td>
+        <td>12</td>
+        <td>11</td>
+        <td>7</td>
+        <td>15</td>
+        <td>11</td>
+        <td class="total">89</td>
+      </tr>
+      <tr class="divb"><!--Ballard 2 B-->
+        <td class="place"></td>
+        <td>Beavers 2</td>
+        <td><b>B</b></td>
+        <td>6</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>5</td>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>3</td>
+        <td>7</td>
+        <td class="total">56</td>
+      </tr>
+      <tr class="diva"><!--Bainbridge 2 A-->
+        <td class="place">7</td>
+        <td class="school">Bainbridge</td>
+        <td><b>A</b></td>
+        <td>6</td>
+        <td>5</td>
+        <td>3</td>
+        <td>6</td>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>9</td>
+        <td class="total">59</td>
+      </tr>
+      <tr class="divb"><!--Bainbridge 2 B-->
+        <td class="palce"></td>
+        <td>Spartans 2</td>
+        <td><b>B</b></td>
+        <td>13</td>
+        <td>14</td>
+        <td>3</td>
+        <td>6</td>
+        <td>6</td>
+        <td>10</td>
+        <td>7</td>
+        <td>9</td>
+        <td>12</td>
+        <td>11</td>
+        <td class="total">91</td>
+      </tr>
+      <tr class="diva"><!--Lincoln OR 2 A-->
+        <td class="place">8</td>
+        <td class="school">Lincoln OR</td>
+        <td><b>A</b></td>
+        <td>9</td>
+        <td>9</td>
+        <td>5</td>
+        <td>5</td>
+        <td>4</td>
+        <td>6</td>
+        <td>5</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td class="total">73</td>
+      </tr>
+      <tr class="divb"><!--Lincoln OR 2 B-->
+        <td class="palce"></td>
+        <td>Cardinals 2</td>
+        <td><b>B</b></td>
+        <td>8</td>
+        <td>12</td>
+        <td>7</td>
+        <td>12</td>
+        <td>7</td>
+        <td>11</td>
+        <td>8</td>
+        <td>11</td>
+        <td>7</td>
+        <td>12</td>
+        <td class="total">96</td>
+      </tr>
+      <tr class="diva"><!--Hood River Valley A-->
+        <td class="place">9</td>
+        <td class="school">Hood River Valley</td>
+        <td><b>A</b></td>
+        <td>12</td>
+        <td>15</td>
+        <td>4</td>
+        <td>10</td>
+        <td>14</td>
+        <td>13</td>
+        <td>10</td>
+        <td>4</td>
+        <td>7</td>
+        <td>13</td>
+        <td class="total">102</td>
+      </tr>
+      <tr class="divb"><!--Hood River Valley B-->
+        <td class="palce"></td>
+        <td>Eagles</td>
+        <td><b>B</b></td>
+        <td>12</td>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+        <td>DSQ</td>
+        <td>7</td>
+        <td>8</td>
+        <td>7</td>
+        <td>10</td>
+        <td>13</td>
+        <td class="total">94</td>
+      </tr>
+      <tr class="diva"><!--Squalicum A-->
+        <td class="place">10</td>
+        <td class="school">Squalicum</td>
+        <td><b>A</b></td>
+        <td>8</td>
+        <td>11</td>
+        <td>16</td>
+        <td>16</td>
+        <td>16</td>
+        <td>16</td>
+        <td>16</td>
+        <td>17</td>
+        <td>12</td>
+        <td>7</td>
+        <td class="total">135</td>
+      </tr>
+      <tr class="divb"><!--Squalicum B-->
+        <td class="palce"></td>
+        <td>Storm</td>
+        <td><b>B</b></td>
+        <td>7</td>
+        <td>3</td>
+        <td>12</td>
+        <td>7</td>
+        <td>10</td>
+        <td>5</td>
+        <td>10</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
+        <td class="total">74</td>
+      </tr>
+      <tr class="diva"><!--Olympia 2 A-->
+        <td class="place">* 11</td>
+        <td class="school">Olympia</td>
+        <td><b>A</b></td>
+        <td>18</td>
+        <td>14</td>
+        <td>8</td>
+        <td>11</td>
+        <td>8</td>
+        <td>8</td>
+        <td>9</td>
+        <td>15</td>
+        <td>9</td>
+        <td>14</td>
+        <td class="total">114</td>
+      </tr>
+      <tr class="divb"><!--Olympia 2 B-->
+        <td class="palce"></td>
+        <td>Bears 2</td>
+        <td><b>B</b></td>
+        <td>14</td>
+        <td>10</td>
+        <td>10</td>
+        <td>17</td>
+        <td>9</td>
+        <td>9</td>
+        <td>15</td>
+        <td>12</td>
+        <td>18</td>
+        <td>4</td>
+        <td class="total">118</td>
+      </tr>
+      <tr class="diva"><!--North Kitsap A-->
+        <td class="place">* 12</td>
+        <td class="school">North Kitsap</td>
+        <td><b>A</b></td>
+        <td>17</td>
+        <td>8</td>
+        <td>19</td>
+        <td>15</td>
+        <td>15</td>
+        <td>10</td>
+        <td>15</td>
+        <td>11</td>
+        <td>11</td>
+        <td>8</td>
+        <td class="total">129</td>
+      </tr>
+      <tr class="divb"><!--North Kitsap B-->
+        <td class="palce"></td>
+        <td>Dogfish</td>
+        <td><b>B</b></td>
+        <td>10</td>
+        <td>22</td>
+        <td>4</td>
+        <td>8</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>13</td>
+        <td>4</td>
+        <td>17</td>
+        <td class="total">103</td>
+      </tr>
+      <tr class="diva"><!--Port Townsend A-->
+        <td class="place">13</td>
+        <td class="school">Port Townsend</td>
+        <td><b>A</b></td>
+        <td>13</td>
+        <td>13</td>
+        <td>7</td>
+        <td>12</td>
+        <td>12</td>
+        <td>15</td>
+        <td>12</td>
+        <td>12</td>
+        <td>5</td>
+        <td>15</td>
+        <td class="total">116</td>
+      </tr>
+      <tr class="divb"><!--Port Townsend B-->
+        <td class="palce"></td>
+        <td>Redhawks</td>
+        <td><b>B</b></td>
+        <td>17</td>
+        <td>17</td>
+        <td>14</td>
+        <td>14</td>
+        <td>14</td>
+        <td>16</td>
+        <td>11</td>
+        <td>8</td>
+        <td>13</td>
+        <td>8</td>
+        <td class="total">132</td>
+      </tr>
+      <tr class="diva"><!--Sehome A-->
+        <td class="place">14</td>
+        <td class="school">Seahome</td>
+        <td><b>A</b></td>
+        <td>14</td>
+        <td>17</td>
+        <td>10</td>
+        <td>9</td>
+        <td>13</td>
+        <td>11</td>
+        <td>6</td>
+        <td>16</td>
+        <td>14</td>
+        <td>12</td>
+        <td class="total">122</td>
+      </tr>
+      <tr class="divb"><!--Sehome B-->
+        <td class="palce"></td>
+        <td>Mariners</td>
+        <td><b>B</b></td>
+        <td>11</td>
+        <td>9</td>
+        <td>13</td>
+        <td>15</td>
+        <td>DNS</td>
+        <td>15</td>
+        <td>14</td>
+        <td>14</td>
+        <td>14</td>
+        <td>16</td>
+        <td class="total">141</td>
+      </tr>
+      <tr class="diva"><!--Bellingham A-->
+        <td class="place">15</td>
+        <td class="school">Bellingham</td>
+        <td><b>A</b></td>
+        <td>11</td>
+        <td>19</td>
+        <td>15</td>
+        <td>13</td>
+        <td>9</td>
+        <td>14</td>
+        <td>4</td>
+        <td>8</td>
+        <td>16</td>
+        <td>16</td>
+        <td class="total">125</td>
+      </tr>
+      <tr class="divb"><!--Bellingham B-->
+        <td class="palce"></td>
+        <td>Bayhawks</td>
+        <td><b>B</b></td>
+        <td>15</td>
+        <td>16</td>
+        <td>16</td>
+        <td>11</td>
+        <td>12</td>
+        <td>14</td>
+        <td>17</td>
+        <td>15</td>
+        <td>15</td>
+        <td>15</td>
+        <td class="total">146</td>
+      </tr>
+      <tr class="diva"><!--Orcas A-->
+        <td class="place">16</td>
+        <td class="school">Orcas</td>
+        <td><b>A</b></td>
+        <td>16</td>
+        <td>16</td>
+        <td>11</td>
+        <td>17</td>
+        <td>10</td>
+        <td>9</td>
+        <td>17</td>
+        <td>13</td>
+        <td>13</td>
+        <td>6</td>
+        <td class="total">128</td>
+      </tr>
+      <tr class="divb"><!--Orcas B-->
+        <td class="palce"></td>
+        <td>Vikings</td>
+        <td><b>B</b></td>
+        <td>9</td>
+        <td>13</td>
+        <td>DNF</td>
+        <td>18</td>
+        <td>13</td>
+        <td>13</td>
+        <td>16</td>
+        <td>16</td>
+        <td>11</td>
+        <td>18</td>
+        <td class="total">147</td>
+      </tr>
+      <tr class="diva"><!--Gig Harbor A-->
+        <td class="place">17</td>
+        <td class="school">Gig Harbor</td>
+        <td><b>A</b></td>
+        <td>15</td>
+        <td>10</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>17</td>
+        <td>18</td>
+        <td>14</td>
+        <td>17</td>
+        <td>17</td>
+        <td class="total">162</td>
+      </tr>
+      <tr class="divb"><!--Gig Harbor B-->
+        <td class="palce"></td>
+        <td>Tides</td>
+        <td><b>B</b></td>
+        <td>18</td>
+        <td>DNS</td>
+        <td>17</td>
+        <td>16</td>
+        <td>DNF</td>
+        <td>DNS</td>
+        <td>12</td>
+        <td>17</td>
+        <td>16</td>
+        <td>14</td>
+        <td class="total">170</td>
+      </tr>
+      <tr class="diva"><!--Ballard A-->
+        <td class="place">18</td>
+        <td class="school">Ballard</td>
+        <td><b>A</b></td>
+        <td>10</td>
+        <td>12</td>
+        <td>9</td>
+        <td>14</td>
+        <td>18</td>
+        <td>18</td>
+        <td>13</td>
+        <td>18</td>
+        <td>DNS</td>
+        <td>DNS</td>
+        <td class="total">152</td>
+      </tr>
+      <tr class="divb"><!--Ballard B-->
+        <td class="palce"></td>
+        <td>Beavers 1</td>
+        <td><b>B</b></td>
+        <td>BYE</td>
+        <td>BYE</td>
+        <td>BYE</td>
+        <td>BYE</td>
+        <td>BYE</td>
+        <td>BYe</td>
+        <td>BYE</td>
+        <td>DNS</td>
+        <td>BYE</td>
+        <td>BYE</td>
+        <td class="total">183</td>
+      </tr>
+      <tr class="diva"><!--Oak Harbor A-->
+        <td class="place">19</td>
+        <td class="school">Oak Harbor</td>
+        <td><b>A</b></td>
+        <td>19</td>
+        <td>18</td>
+        <td>18</td>
+        <td>19</td>
+        <td>17</td>
+        <td>19</td>
+        <td>19</td>
+        <td>19</td>
+        <td>8</td>
+        <td>18</td>
+        <td class="total">174</td>
+      </tr>
+      <tr class="divb"><!--Oak Harbor B-->
+        <td class="palce"></td>
+        <td>Wildcats</td>
+        <td><b>B</b></td>
+        <td>16</td>
+        <td>15</td>
+        <td>15</td>
+        <td>13</td>
+        <td>DNS</td>
+        <td>DNS</td>
+        <td>18</td>
+        <td>18</td>
+        <td>17</td>
+        <td>10</td>
+        <td class="total">162</td>
+      </tr>
+    </table>
+    <p class="rtt"><a href="#top">Return to top</a></p>
+  </main>
+  <section id="team_racing">
+    <h2>Team Racing</h2>
+    <div>
+      <h3>Courses and Rules</h3>
+      <p>The format for team racing is usually 3 vs. 3 boats, making 6 sailors per team. </p>
+      <p>The most common course is a <q>Digital N</q> course (looks like a figure N), or a box-shaped course. 
+        These are short courses so tactics matter a bit more than boat speed. Winning a race in team racing has to do more with rules and how to use them to your advantage 
+        in order to get you and your team makes ahead of the opposing team. A couple of examples of what you could do with the rules is mark trapping: just like on the road, 
+        there is a right-of-way on the water, and using the right-of-way rules you can stop an opposing boat from going around a mark which can cause them to fall back a place, 
+        or at least slow them down so your teammate can catch up if they are behind. </p>
+    </div>
+    <div>
+      <h3>Scoring</h3>
+      <p>The way the scoring works for team racing is a low-point system. 1st = 1 point, 2nd = 2 points, 6th = 6 points. 
+        You add up the places you and your team mates got to get your final score to determine if you won the race or not. The team with the lower amount of points wins. 
+        There are "winning" and "losing" combinations with your boat position, along with "stable" and "unstable" combinations. "Winning" combinations are 10 points or less, or where you know 
+        that your team will win, opposite with losing combinations. "Stable" combinations are boat placements were the other team has a lower chance of taking one of your 
+        team's positions. Having a 1st and 2nd with any other place is considered a "winning stable" combination, as two of your boats are next to each other in placement 
+        which makes it so the other team won't be able to get in between the two of your boats and take a place as easily. So just one boat getting a 1st place doesn't guarantee a win. 
+        "Losing" combinations are places that add up to 11 or more. An example of a "losing" and "unstable" combination is 1-4-6 and 2-5-6. 
+        These are "unstable" because there is a boat in between each of you and your teammates, as an opponment could easily take you or your teammates back a place. </p>
+      <p><b>Here is an example of what a team racing score board may look like.</b></p>
+      <p>The final score board lists the amount of races you won, along with the amount of races your team lost. 
+        The overall placement is on the left, your school goes on the right of the overall placement, then your team mascot, then how many races you won and lost 
+        (how many you won / how many you lost). The asterisks on the left of the placements shows a tie, how a tie is solved is based on how many protests each of the 
+        tied team got while racing. On the right of the board, lists each skipper and crew for each team, each skipper has their crew listed on the right of them.</p>
+      <table id="team_table"> <!--Team Racing Scores Table-->
+        <tr class="headers"><!--Headers-->
+          <th></th> <!--Ties-->
+          <th>#</th>
+          <th>School</th>
+          <th>Team</th>
+          <th>Rec.</th>
+          <th>Skippers</th>
+          <th>Crews</th>
+        </tr>
+        <tr> <!--Tides-->
+          <td class="ties">*</td>
+          <td class="place">1</td>
+          <td class="school">Gig Harbor High School</td>
+          <td class="team">Tides</td>
+          <td class="rec">10/4</td>
+          <td>
+            <p>Skipper 1 '26</p>
+            <p>Skipper 2 '26</p>
+            <p>Skipper 3 '26</p>
+          </td>
+          <td>
+            <p>Crew 1 '27</p>
+            <p>Crew 2 '27</p>
+            <p>Crew 3 '27</p>
+          </td>
+        </tr>
+        <tr><!--Lions-->
+          <td class="ties">**</td>
+          <td class="place">2</td>
+          <td class="school">Bellarmine Preparatory School</td>
+          <td class="team">Lions</td>
+          <td class="rec">10/4</td>
+          <td>
+            <p>Skipper 1 '26</p>
+            <p>Skipper 2 '26</p>
+            <p>Skipper 3 '26</p>
+          </td>
+          <td>
+            <p>Crew 1 '27</p>
+            <p>Crew 2 '27</p>
+            <p>Crew 3 '27</p>
+          </td>
+        </tr>
+        <tr><!--Dogfish-->
+          <td class="ties"></td>
+          <td class="place">3</td>
+          <td class="school">North Kitsap High School</td>
+          <td class="team">Dogfish</td>
+          <td class="rec">7/7</td>
+          <td>
+            <p>Skipper 1 '26</p>
+            <p>Skipper 2 '26</p>
+            <p>Skipper 3 '26</p>
+          </td>
+          <td>
+            <p>Crew 1 '27</p>
+            <p>Crew 2 '27</p>
+            <p>Crew 3 '27</p>
+          </td>
+        </tr>
+        <tr><!--Spartans-->
+          <td class="ties"></td>
+          <td class="place">4</td>
+          <td class="school">Bainbridge High School</td>
+          <td class="team">Spartans</td>
+          <td class="rec">8/6</td>
+          <td>
+            <p>Skipper 1 '26</p>
+            <p>Skipper 2 '26</p>
+            <p>Skipper 3 '26</p>
+          </td>
+          <td>
+            <p>Crew 1 '27</p>
+            <p>Crew 2 '27</p>
+            <p>Crew 3 '27</p>
+          </td>
+        </tr>
+        <tr><!--Courgars-->
+          <td class="ties"></td>
+          <td class="place">5</td>
+          <td class="school">Central Kitsap High School</td>
+          <td class="team">Cougars</td>
+          <td class="rec">4/10</td>
+          <td>
+            <p>Skipper 1 '26</p>
+            <p>Skipper 2 '26</p>
+            <p>Skipper 3 '26</p>
+          </td>
+          <td>
+            <p>Crew 1 '27</p>
+            <p>Crew 2 '27</p>
+            <p>Crew 3 '27</p>
+          </td>
+        </tr>
+        <tr><!--Roughriders-->
+          <td class="ties"></td>
+          <td class="place">6</td>
+          <td class="school">Port Angeles High School</td>
+          <td class="team">Roughriders</td>
+          <td class="rec">3/11</td>
+          <td>
+            <p>Skipper 1 '26</p>
+            <p>Skipper 2 '26</p>
+            <p>Skipper 3 '26</p>
+          </td>
+          <td>
+            <p>Crew 1 '27</p>
+            <p>Crew 2 '27</p>
+            <p>Crew 3 '27</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <p class="rtt"><a href="#top">Return to top</a></p>
+  <footer>
+    <p>&copy; Amber Faragalli 2025</p>
+  </footer>
+</body>
+</html>

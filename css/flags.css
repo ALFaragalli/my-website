@@ -31,13 +31,17 @@ br {
     clear: both;
 }
 
+footer {
+    text-align: center;
+}
+
 /*Images*/
 #Sflags_image {
-    width: 35%;
+    width: 70%;
 }
 
 #Nflags_image {
-    width: 40%;
+    width: 50%;
 }
 
 /*Flag Images Specific*/
@@ -46,6 +50,10 @@ main#flagspage img {
 }
 
 /*Navigation Menu*/
+#nav_menu {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #nav_menu ul {
     list-style-type: none;
     padding: 1em 0;
@@ -66,20 +74,60 @@ main#flagspage img {
 
 #nav_menu ul li a.current {
     text-decoration: none;
+    color: rgb(17, 105, 98);
 }
 
 #nav_menu ul li a:hover {
     color: rgb(151, 28, 28);
 }
 
+/*Page Content*/
+#content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
 
-@media only screen and (max-width: 451px) {
-    #nav_menu ul li {
-        float: none;
-        width: 100%;
+#flagspage {
+    flex: 0 0 40%;
+    min-width: 300px;
+}
+
+#aside1 {
+    flex: 1;
+}
+
+#flagspage img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Return to Top*/
+#rtt {
+    text-align: center;
+}
+
+@media only screen and (max-width: 670px) {
+    #nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #nav_menu ul li {
-    display: table-row;
+        float: none;
+        width: 100%;
+        display: table-row;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #flagspage, #aside1 {
+        max-width: 100%;
+        flex: 1 1 100%;
     }
 }

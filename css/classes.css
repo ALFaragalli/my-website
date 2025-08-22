@@ -1,5 +1,3 @@
-
-
 header {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
@@ -169,21 +167,29 @@ footer {
 
 #nav_menu ul li a.current {
     text-decoration: none;
+    color: rgb(17, 105, 98);
 }
 
 #nav_menu ul li a:hover {
     color: rgb(151, 28, 28);
 }
 
+/*Return to Top*/
+#rtt {
+    text-align: center;
+}
 
-@media only screen and (max-width: 451px) {
-    #nav_menu ul li {
-        float: none;
-        width: 100%;
+@media only screen and (max-width: 530px) {
+    #nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #nav_menu ul li {
-    display: table-row;
+        float: none;
+        width: 100%;
+        display: table-row;
     }
 
     /*The text goes above the images*/
